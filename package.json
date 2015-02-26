@@ -1,0 +1,22 @@
+{
+  "name": "29986-Sedona",
+  "version": "0.0.1",
+  "description": "Education project «Sedona» for HTML Academy",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/up-htmlacademy/29986-Sedona.git"
+  },
+  "author": "Gamprot",
+  "bugs": {
+    "url": "https://github.com/up-htmlacademy/29986-Sedona/issues"
+  },
+  "homepage": "https://github.com/up-htmlacademy/29986-Sedona",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-lintspaces": "^0.6.0"
+  }
+}
