@@ -1,7 +1,7 @@
 # Проект «Sedona»
 
 * Студент: [Gamprot](https://htmlacademy.ru/profile/id29986).
-* Наставник: `Unknown`.
+* Наставник: [Виталий Зюзин](https://htmlacademy.ru/profile/juwain).
 
 --
 
