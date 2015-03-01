@@ -2,16 +2,134 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Sedona</title>
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <meta charset="utf-8">
+    <title>HTML Academy: Sedona</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 
 <body>
+    <header class="page-header">
+        <nav class="mobile-menu">
+            <ul>
+                <li>Карта штата<span class="collapse-button"></span></li>
+                <li>Информация</li>
+                <li>Фото и видео</li>
+                <li>Гостиницы</li>
+            </ul>
+        </nav>
+        <div class="top-menu">
+            <div class="logo"></div>
+            <div class="expand-button"></div>
+        </div>
+        <div class="intro">
+            <div class="intro-welcome">Welcome</div>
+            <div class="intro-prefix">to the gorgeous</div>
+            <div class="intro-sedona">Sedona</div>
+            <div class="intro-quote">Because the Grand Canyon sucks!</div>    
+        </div>    
+    </header>
+    <div class="page-content">
+        <div class="intro-header">Седона - небольшой городок в Аризоне, заслуживающий большего!</div>
+        <div class="intro-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</div>    
+        
+        <div class="info info-town">
+            <div class="info-header">
+                <div class="info-header-title">Настоящий городок</div>
+                <div class="info-header-counter">№1</div>
+                <div class="info-header-description">Седона не атракцион для туристов, там течет своя жизнь</div>
+            </div>
+            <div class="info-image"></div>
+            <ul class="info-list">
+                <li class="info-list-item info-town-house">
+                    <div class="info-list-item-header">Жилье</div>
+                    <div class="info-list-item-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
+                </li>
+                <li class="info-list-item info-town-souvenirs">
+                    <div class="info-list-item-header">Сувениры</div>
+                    <div class="info-list-item-description">Не только китайского, но и местного производства!</div>
+                </li>
+                <li class="info-list-item info-town-meal">
+                    <div class="info-list-item-header">Еда</div>
+                    <div class="info-list-item-description">Всегда заказывайте фирмерный бургер, вы не разочаруетесь!</div>
+                </li>
+            </ul>            
+        </div>
+        <div class="info info-bridge">
+            <div class="info-header">
+                <div class="info-header-title">Там есть мост дьявола</div>
+                <div class="info-header-counter">№2</div>
+                <div class="info-header-description">Да, по нему можно пройти! Если конечно вы осмелитесь</div>
+            </div>
+            <div class="info-image"></div>            
+        </div>
+        <div class="info info-square">
+            <div class="info-header">
+                <div class="info-header-title">Небольшая площадь</div>
+                <div class="info-header-counter">№3</div>
+                <div class="info-header-description">Все достопримечательности находятся очень близко</div>
+            </div>
+        </div>
+        <div class="info info-road">
+            <div class="info-header">
+                <div class="info-header-title">Красивая дорога</div>
+                <div class="info-header-counter">№4</div>
+                <div class="info-header-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</div>
+            </div>
+        </div>
+        <div class="info info-tourists">
+            <div class="info-header">
+                <div class="info-header-title">Мало туристов</div>
+                <div class="info-header-counter">№5</div>
+                <div class="info-header-description">Большинство едет в Гранд Каньон и толпится там</div>
+            </div>    
+        </div>
+        
+        <div class="search">
+            <div class="search-header-title">Заинтересовались?</div>
+            <div class="search-header-description">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</div>
+            <div class="search-subheader-title">Поиск гостиницы в Седоне</div>            
+            <form class="search-form">
+                <div class="row">
+                    <label class="search-form-label" for="search-form-arrival">Дата заезда:</label>
+                    <input type="date" class="search-form-input" id="search-form-arrival" value="2014-04-24" />
+                </div>
+                <div class="row">
+                    <label class="search-form-label" for="search-form-departure">Дата выезда:</label>
+                    <input type="date" class="search-form-input" id="search-form-departure" value="2014-07-24" />
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <label class="search-form-label" for="search-form-adult">Взрослых:</label>
+                        <input type="number" class="search-form-input" id="search-form-adult" value="2" min="0" />
+                    </div>
+                    <div class="column">
+                        <label class="search-form-label" for="search-form-children">Детей:</label>
+                        <input type="number" class="search-form-input" id="search-form-children" value="0" min="0" />
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Найти"/>
+                </div>
+            </form>
+            <div class="search-result"></div>
+        </div>
+    </div>
+    
+    <footer class="page-footer">
+        <div class="hashtag">#VisitSedona</div>
+        <div class="social">
+            <div class="social-btn social-tw"></div>
+            <div class="social-btn social-fb"></div>
+            <div class="social-btn social-yt"></div>
+        </div>
+        <div class="authors">
+            <span>Website by</span>
+            <span class="inline-developer-logo"></span>
+            <span>for</span>
+            <span class="inline-academy-logo"></span>
+        </div>
+    </footer>
 
-  <p>Репозиторий создан для обучения на продвинутом онлайн-интенсиве «<a href="https://htmlacademy.ru/advanced_intensive">Создание веб-интерфейсов с помощью HTML и CSS</a>».</p>
-
-  <!-- <script src="js/script.js"></script> -->
-
+    <!-- <script src="js/script.js"></script> -->
 </body>
 </html>
