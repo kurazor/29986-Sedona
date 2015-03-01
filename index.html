@@ -83,6 +83,35 @@
                 <div class="info-header-description">Большинство едет в Гранд Каньон и толпится там</div>
             </div>    
         </div>
+        
+        <div class="search">
+            <div class="search-header-title">Заинтересовались?</div>
+            <div class="search-header-description">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</div>
+            <div class="search-subheader-title">Поиск гостиницы в Седоне</div>            
+            <form class="search-form">
+                <div class="row">
+                    <label class="search-form-label" for="search-form-arrival">Дата заезда:</label>
+                    <input type="date" class="search-form-input" id="search-form-arrival" value="2014-04-24" />
+                </div>
+                <div class="row">
+                    <label class="search-form-label" for="search-form-departure">Дата выезда:</label>
+                    <input type="date" class="search-form-input" id="search-form-departure" value="2014-07-24" />
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <label class="search-form-label" for="search-form-adult">Взрослых:</label>
+                        <input type="number" class="search-form-input" id="search-form-adult" value="2" min="0" />
+                    </div>
+                    <div class="column">
+                        <label class="search-form-label" for="search-form-children">Детей:</label>
+                        <input type="number" class="search-form-input" id="search-form-children" value="0" min="0" />
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Найти"/>
+                </div>
+            </form>
+        </div>
     </div>
 
     <!-- <script src="js/script.js"></script> -->
