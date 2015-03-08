@@ -4,6 +4,7 @@ body {
 	padding: 0;
 	font-size: 16px;
 	font-family: 'PT Sans', sans-serif;
+	font-weight: normal;
 }
 
 .page-menu {
@@ -42,12 +43,39 @@ body {
 .page-menu__collapse-button {
 	display: block;
 	position: absolute;
-	right: 7px;
-	top: 12px;
+	right: 0px;
+	top: 0px;
 	background: url('../img/collapse-button.png') 50% 50% no-repeat;
-	width: 23px;
-	height: 22px;
+	width: 55px;
+	height: 55px;
 	text-indent: -1000px;
 	overflow: hidden;
+}
+
+.page-menu-panel {
+	position: relative;
+}
+
+.page-menu-panel:after {
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+.page-menu-panel__logo {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -69px;
+}
+
+.page-menu-panel__expand-button {
+	text-indent: -1000px;
+	overflow: hidden;
+	float: right;
+	display: inline-block;
+	background: url('../img/expand-button.png') 50% 50% no-repeat;
+	width: 56px;
+	height: 56px;
 }
 
