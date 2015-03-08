@@ -1,0 +1,39 @@
+@import "../variables.less";
+
+.info-header {
+  background-color: @color-fill-normal;
+}
+
+.info-header.info-header--featured {
+  background-color: @color-fill-featured;
+}
+
+.info-header__title {
+  color: @text-color-normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.info-header__counter {
+  color: @text-color-normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.info-header__description {
+  color: @text-color-normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.info-header.info-header--featured .info-header__title {
+  color: @text-color-inverted;
+}
+
+.info-header.info-header--featured .info-header__counter {
+  color: @text-color-inverted;
+}
+
+.info-header.info-header--featured .info-header__description {
+  color: @text-color-inverted;
+}

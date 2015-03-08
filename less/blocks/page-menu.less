@@ -1,3 +1,4 @@
+@import "../variables.less";
 @import (reference) "../components/mixins.less";
 
 .page-menu {
@@ -9,7 +10,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: #81b3d2;
+  background-color: @color-fill-featured;
 }
 
 .page-menu__list li {
@@ -19,13 +20,13 @@
   
   border: 0;
   &:not(:last-child) {
-    border-bottom: 1px solid #678fa8;
+    border-bottom: 1px solid darken(@color-fill-featured, 15%);
   }
   &:not(:first-child) {
-    border-top: 1px solid #9ac2db;
+    border-top: 1px solid lighten(@color-fill-featured, 15%);
   }
   
-  color: white;
+  color: @text-color-inverted;
   text-align: center;
   text-transform: uppercase;
   
