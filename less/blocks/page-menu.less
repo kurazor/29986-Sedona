@@ -1,0 +1,47 @@
+.page-menu {
+  position: relative;
+}
+
+.page-menu__list {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #81b3d2;
+}
+
+.page-menu__list li {
+  display: block;
+  margin: 0;
+  padding: 7px 0;
+  
+  border: 0;
+  &:not(:last-child) {
+    border-bottom: 1px solid #678fa8;
+  }
+  &:not(:first-child) {
+    border-top: 1px solid #9ac2db;
+  }
+  
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.page-menu__collapse-button {
+  display: block;
+  position: absolute;
+  right: 7px;
+  top: 12px;
+  
+  background: url('../img/collapse-button.png') 50% 50% no-repeat;
+  width: 23px;
+  height: 22px;
+  
+  text-indent: -1000px;
+  overflow: hidden;
+}
