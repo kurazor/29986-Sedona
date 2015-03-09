@@ -1,6 +1,22 @@
 @import (reference) "../variables.less";
 @import (reference) "../components/mixins.less";
 
+.info {
+  background: @color-fill-background;
+}
+
+.info.info--list-item + .info.info--list-item {
+  background: @color-fill-normal;
+}
+
+.info.info--list-item + .info.info--list-item:before {
+  content: '';
+  display: block;
+  margin: 0 20px;
+  height: 1px;
+  background: darken(@color-fill-normal, 15%);
+}
+
 .info__image {
   .align-center;
 }

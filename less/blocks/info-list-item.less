@@ -1,2 +1,45 @@
 @import (reference) "../variables.less";
 @import (reference) "../components/mixins.less";
+
+.info-list-item {
+  position: relative;
+  padding-left: 60px;
+}
+
+.info-list-item:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 10px;
+}
+
+.info-list-item.info-list-item--house:before {
+  background: url('../img/house.png') 50% 50% no-repeat;
+}
+
+.info-list-item.info-list-item--souvenirs:before {
+  background: url('../img/souvenir.png') 50% 50% no-repeat;
+}
+
+.info-list-item.info-list-item--meal:before {
+  background: url('../img/meal.png') 50% 50% no-repeat;
+}
+
+.info-list-item__header {
+  text-transform: uppercase;
+  color: @text-color-normal;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.info-list-item__description {
+  text-transform: uppercase;
+  color: @text-color-weaken;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
