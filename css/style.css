@@ -102,6 +102,12 @@ body {
 	text-align: center;
 }
 
+.info__image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .info-header {
 	background-color: #eeeeee;
 }
@@ -150,5 +156,79 @@ body {
 
 .search-form-submit {
 	background-color: #81b3d2;
+}
+
+.page-footer {
+	background: url('../img/map.jpg') 50% 0 no-repeat;
+	padding-top: 361px;
+}
+
+.page-footer-panel {
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 25px 0;
+}
+
+.page-footer-panel__hashtag {
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
+}
+
+.page-footer-panel__socialwrapper {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.social {
+	text-align: center;
+}
+
+.social__button {
+	display: inline-block;
+	width: 46px;
+	height: 48px;
+	text-indent: -1000px;
+	overflow: hidden;
+}
+
+.social__button.social__button--twitter {
+	background: url('../img/twitter.png') 50% 50% no-repeat;
+}
+
+.social__button.social__button--facebook {
+	background: url('../img/facebook.png') 50% 50% no-repeat;
+}
+
+.social__button.social__button--youtube {
+	background: url('../img/youtube.png') 50% 50% no-repeat;
+}
+
+.page-authors {
+	text-align: center;
+}
+
+.page-authors__text {
+	text-transform: uppercase;
+	color: #000000;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 26px;
+}
+
+.page-authors__developer-logo {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 9px;
+	margin-right: 9px;
+}
+
+.page-authors__academy-logo {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 9px;
+	margin-right: 9px;
 }
 
