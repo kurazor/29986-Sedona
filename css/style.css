@@ -119,11 +119,11 @@ body {
 	background: #ffffff;
 }
 
-.info.info--list-item + .info.info--list-item {
+.info--list-item + .info--list-item {
 	background: #eeeeee;
 }
 
-.info.info--list-item + .info.info--list-item:before {
+.info--list-item + .info--list-item:before {
 	content: '';
 	display: block;
 	margin: 0 20px;
@@ -142,11 +142,12 @@ body {
 	padding: 30px;
 }
 
-.info-header.info-header--featured {
+.info-header--featured {
 	background-color: #81b3d2;
 }
 
-.info-header__title {
+.info-header__title,
+.info-header--featured__title {
 	color: #000000;
 	text-transform: uppercase;
 	text-align: center;
@@ -156,7 +157,8 @@ body {
 	margin-bottom: 10px;
 }
 
-.info-header__counter {
+.info-header__counter,
+.info-header--featured__counter {
 	color: #333333;
 	text-transform: uppercase;
 	text-align: center;
@@ -167,7 +169,9 @@ body {
 }
 
 .info-header__counter:before,
-.info-header__counter:after {
+.info-header__counter:after,
+.info-header--featured__counter:before,
+.info-header--featured__counter:after {
 	content: '';
 	display: inline-block;
 	vertical-align: middle;
@@ -176,15 +180,18 @@ body {
 	width: 10px;
 }
 
-.info-header__counter:before {
+.info-header__counter:before,
+.info-header--featured__counter:before {
 	margin-right: 5px;
 }
 
-.info-header__counter:after {
+.info-header__counter:after,
+.info-header--featured__counter:after {
 	margin-left: 5px;
 }
 
-.info-header__description {
+.info-header__description,
+.info-header--featured__description {
 	color: #333333;
 	text-transform: uppercase;
 	text-align: center;
@@ -193,20 +200,20 @@ body {
 	line-height: 21px;
 }
 
-.info-header.info-header--featured .info-header__title {
+.info-header--featured__title {
 	color: #ffffff;
 }
 
-.info-header.info-header--featured .info-header__counter {
+.info-header--featured__counter {
 	color: #ffffff;
 }
 
-.info-header.info-header--featured .info-header__description {
+.info-header--featured__description {
 	color: #ffffff;
 }
 
-.info-header.info-header--featured .info-header__counter:before,
-.info-header.info-header--featured .info-header__counter:after {
+.info-header--featured__counter:before,
+.info-header--featured__counter:after {
 	background: #ffffff;
 }
 
@@ -236,15 +243,15 @@ body {
 	left: 10px;
 }
 
-.info-list-item.info-list-item--house:before {
+.info-list-item--house:before {
 	background: url('../img/house.png') 50% 50% no-repeat;
 }
 
-.info-list-item.info-list-item--souvenirs:before {
+.info-list-item--souvenirs:before {
 	background: url('../img/souvenir.png') 50% 50% no-repeat;
 }
 
-.info-list-item.info-list-item--meal:before {
+.info-list-item--meal:before {
 	background: url('../img/meal.png') 50% 50% no-repeat;
 }
 
@@ -404,15 +411,15 @@ body {
 	overflow: hidden;
 }
 
-.social__button.social__button--twitter {
+.social__button--twitter {
 	background: url('../img/twitter.png') 50% 50% no-repeat;
 }
 
-.social__button.social__button--facebook {
+.social__button--facebook {
 	background: url('../img/facebook.png') 50% 50% no-repeat;
 }
 
-.social__button.social__button--youtube {
+.social__button--youtube {
 	background: url('../img/youtube.png') 50% 50% no-repeat;
 }
 

@@ -1,16 +1,14 @@
-@import (reference) "../variables.less";
-@import (reference) "../components/mixins.less";
-
 .info-header {
   background-color: @color-fill-normal;
   padding: 30px;
 }
 
-.info-header.info-header--featured {
+.info-header--featured {
   background-color: @color-fill-featured;
 }
 
-.info-header__title {
+.info-header__title,
+.info-header--featured__title {
   color: @text-color-normal;
   text-transform: uppercase;
   text-align: center;
@@ -22,7 +20,8 @@
   margin-bottom: 10px;
 }
 
-.info-header__counter {
+.info-header__counter,
+.info-header--featured__counter {
   color: @text-color-weaken;
   text-transform: uppercase;
   text-align: center;
@@ -35,7 +34,9 @@
 }
 
 .info-header__counter:before,
-.info-header__counter:after {
+.info-header__counter:after,
+.info-header--featured__counter:before,
+.info-header--featured__counter:after {
   content: '';
   display: inline-block;
   vertical-align: middle;
@@ -44,15 +45,18 @@
   width: 10px;
 }
 
-.info-header__counter:before {
+.info-header__counter:before,
+.info-header--featured__counter:before {
   margin-right: 5px;
 }
 
-.info-header__counter:after {
+.info-header__counter:after,
+.info-header--featured__counter:after {
   margin-left: 5px;
 }
 
-.info-header__description {
+.info-header__description, 
+.info-header--featured__description {
   color: @text-color-weaken;
   text-transform: uppercase;
   text-align: center;
@@ -62,19 +66,19 @@
   line-height: 21px;
 }
 
-.info-header.info-header--featured .info-header__title {
+.info-header--featured__title {
   color: @text-color-inverted;
 }
 
-.info-header.info-header--featured .info-header__counter {
+.info-header--featured__counter {
   color: @text-color-inverted;
 }
 
-.info-header.info-header--featured .info-header__description {
+.info-header--featured__description {
   color: @text-color-inverted;
 }
 
-.info-header.info-header--featured .info-header__counter:before,
-.info-header.info-header--featured .info-header__counter:after {
+.info-header--featured__counter:before,
+.info-header--featured__counter:after {
   background: @text-color-inverted;
 }
