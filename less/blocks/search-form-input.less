@@ -7,10 +7,22 @@
   font-weight: 700;
   line-height: 26px;
   
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   box-sizing: border-box;
   width: 100%;
+  position: relative;
   
   border: none;
   padding: 6px 12px;
+}
+
+.search-form-input--date:after {
+  content: '';
+  display: block;
+  top: 0;
+  right: 0;
+  width: 26px;
+  height: 26px;
+  background: url('../img/calendar.png') 50% 50% no-repeat;
 }

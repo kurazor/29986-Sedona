@@ -16,3 +16,33 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.triangle-bottom (@height, @angle, @color) {
+  position: relative;
+  overflow: hidden;
+  
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: -@height;
+    
+    width: 100%;
+    height: @height;
+
+    background: @color;
+  }
+  
+  &:before {
+    transform: skewY(@angle);
+  }
+  
+  &:after {
+    transform: skewY(-@angle);
+  }
+}
+

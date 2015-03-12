@@ -91,20 +91,32 @@
             <form class="search-form">
                 <div class="search-form-row">
                     <label class="search-form-label" for="search-form-arrival">Дата заезда:</label>
-                    <input type="date" class="search-form-input" id="search-form-arrival" value="2014-04-24" />
+                    <input type="date" class="search-form-input  search-form-input--date" id="search-form-arrival" value="2014-04-24" />
                 </div>
                 <div class="search-form-row">
                     <label class="search-form-label" for="search-form-departure">Дата выезда:</label>
-                    <input type="date" class="search-form-input" id="search-form-departure" value="2014-07-24" />
+                    <input type="date" class="search-form-input  search-form-input--date" id="search-form-departure" value="2014-07-24" />
                 </div>
                 <div class="search-form-row">
                     <div class="search-form-column">
                         <label class="search-form-label" for="search-form-adult">Взрослых:</label>
-                        <input type="number" class="search-form-input" id="search-form-adult" value="2" min="0" />
+                        <div class="search-form-input-panel">
+                          <div class="search-form-input-panel__decrease-counter"></div>
+                          <div class="search-form-input-panel__input-wrapper  search-form-input-panel__input-wrapper--both-tools">
+                            <input type="number" class="search-form-input" id="search-form-adult" value="2" min="0" />
+                          </div>
+                          <div class="search-form-input-panel__increase-counter"></div>
+                        </div>
                     </div>
                     <div class="search-form-column">
                         <label class="search-form-label" for="search-form-children">Детей:</label>
-                        <input type="number" class="search-form-input" id="search-form-children" value="0" min="0" />
+                        <div class="search-form-input-panel">
+                          <div class="search-form-input-panel__decrease-counter"></div>
+                          <div class="search-form-input-panel__input-wrapper  search-form-input-panel__input-wrapper--both-tools">
+                            <input type="number" class="search-form-input" id="search-form-children" value="0" min="0" />
+                          </div>
+                          <div class="search-form-input-panel__increase-counter"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="search-form-row">
