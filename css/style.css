@@ -59,14 +59,7 @@ body {
 .page-menu__list li {
 	display: block;
 	margin: 0;
-	padding: 7px 0;
 	border: 0;
-	color: #ffffff;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 40px;
 }
 
 .page-menu__list li:not(:last-child) {
@@ -75,6 +68,24 @@ body {
 
 .page-menu__list li:not(:first-child) {
 	border-top: 1px solid #b9d5e6;
+}
+
+.page-menu__list a {
+	display: block;
+	padding: 7px 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 40px;
+}
+
+.page-menu__list a,
+.page-menu__list a:hover,
+.page-menu__list a:active,
+.page-menu__list a:focus {
+	color: #ffffff;
+	text-decoration: none;
 }
 
 .page-menu__collapse-button {
@@ -425,19 +436,18 @@ body {
 	padding: 0;
 }
 
-.search-form-input-panel__decrease-counter {
+.search-form-input-panel__counter {
 	display: inline-block;
 	vertical-align: middle;
 	height: 38px;
 	width: 38px;
+}
+
+.search-form-input-panel__counter--decrease {
 	background: url('../img/minus.png') 50% 50% no-repeat;
 }
 
-.search-form-input-panel__increase-counter {
-	display: inline-block;
-	vertical-align: middle;
-	height: 38px;
-	width: 38px;
+.search-form-input-panel__counter--increase {
 	background: url('../img/plus.png') 50% 50% no-repeat;
 }
 

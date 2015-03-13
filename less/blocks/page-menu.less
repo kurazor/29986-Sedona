@@ -15,7 +15,6 @@
 .page-menu__list li {
   display: block;
   margin: 0;
-  padding: 7px 0;
   
   border: 0;
   &:not(:last-child) {
@@ -24,14 +23,26 @@
   &:not(:first-child) {
     border-top: 1px solid lighten(@color-fill-featured, 15%);
   }
+}
+
+.page-menu__list a {
+  display: block;
+  padding: 7px 0;
   
-  color: @text-color-inverted;
   text-align: center;
   text-transform: uppercase;
   
   font-size: 18px;
   font-weight: 700;
   line-height: 40px;
+  
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    color: @text-color-inverted;
+    text-decoration: none;
+  }
 }
 
 .page-menu__collapse-button {
