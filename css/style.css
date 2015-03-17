@@ -11,6 +11,10 @@ body {
 	background-color: #ffffff;
 }
 
+.page-header {
+	position: relative;
+}
+
 .page-header__intro {
 	background: url('../img/intro.jpg') 50% 0 no-repeat;
 	height: 390px;
@@ -102,6 +106,7 @@ body {
 
 .page-menu-panel {
 	position: relative;
+	z-index: 2;
 }
 
 .page-menu-panel:after {
@@ -554,5 +559,77 @@ body {
 	vertical-align: middle;
 	margin-left: 9px;
 	margin-right: 9px;
+}
+
+@media (min-width: 768px) {
+
+.page-menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 3;
+}
+
+.page-menu__list {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-around;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.page-menu__list li {
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	border: 0;
+}
+
+.page-menu__list li:not(:last-child) {
+	border: 0;
+}
+
+.page-menu__list li:not(:first-child) {
+	border: 0;
+}
+
+.page-menu__list li:nth-child(2) {
+	margin-right: 78px;
+}
+
+.page-menu__list li:nth-child(3) {
+	margin-left: 78px;
+}
+
+.page-menu__list a {
+	padding: 15px;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 26px;
+}
+
+.page-menu__list a,
+.page-menu__list a:hover,
+.page-menu__list a:active,
+.page-menu__list a:focus {
+	color: #000000;
+}
+
+.page-menu__collapse-button {
+	display: none;
+}
+
+.page-menu-panel {
+	min-height: 56px;
+}
+
+.page-menu-panel__expand-button {
+	display: none;
+}
+
 }
 

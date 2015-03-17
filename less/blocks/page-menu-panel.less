@@ -1,6 +1,8 @@
 .page-menu-panel {
   position: relative;
   .clearfix;
+  
+  z-index: 2;
 }
 
 .page-menu-panel__logo {
@@ -20,4 +22,14 @@
   background: url('../img/expand-button.png') 50% 50% no-repeat;
   width: 56px;
   height: 56px;
+}
+
+@media (min-width: @screen-sm-min) { 
+  .page-menu-panel {
+    min-height: 56px;
+  }
+  
+  .page-menu-panel__expand-button {
+    display: none; 
+  }
 }
