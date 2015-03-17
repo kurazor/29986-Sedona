@@ -16,9 +16,10 @@ body {
 }
 
 .page-header__intro {
-	background: url('../img/intro.jpg') 50% 0 no-repeat;
+	background: url('../img/photo-background@1x.jpg') 50% 0 no-repeat;
+	background-size: auto 512px;
 	height: 390px;
-	text-indent: -1000px;
+	text-align: center;
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
@@ -45,6 +46,36 @@ body {
 .page-header__intro:after {
 	-webkit-transform: skewY(-10deg);
 	transform: skewY(-10deg);
+}
+
+.page-header__intro-text--welcome {
+	height: 33px;
+	fill: #81b3d2;
+	margin-top: 47px;
+	margin-bottom: 10px;
+}
+
+.page-header__intro-text--gorgeous {
+	width: 196px;
+	fill: #766357;
+	margin-bottom: 60px;
+}
+
+.page-header__intro-text--sedona {
+	height: 48px;
+	fill: #ffffff;
+	margin-bottom: 67px;
+}
+
+.page-header__intro-text--grand-canyon {
+	height: 54px;
+	fill: #ffffff;
+}
+
+.page-header__intro-text--hidden {
+	display: block;
+	text-indent: -10000px;
+	overflow: hidden;
 }
 
 .page-menu {
@@ -100,7 +131,7 @@ body {
 	background: url('../img/collapse-button.png') 50% 50% no-repeat;
 	width: 55px;
 	height: 55px;
-	text-indent: -1000px;
+	text-indent: -10000px;
 	overflow: hidden;
 }
 
@@ -124,7 +155,7 @@ body {
 }
 
 .page-menu-panel__expand-button {
-	text-indent: -1000px;
+	text-indent: -10000px;
 	overflow: hidden;
 	float: right;
 	display: inline-block;
@@ -519,7 +550,7 @@ body {
 	display: inline-block;
 	width: 46px;
 	height: 48px;
-	text-indent: -1000px;
+	text-indent: -10000px;
 	overflow: hidden;
 }
 
@@ -561,7 +592,31 @@ body {
 	margin-right: 9px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
+
+.page-header__intro {
+	height: 512px;
+}
+
+.page-header__intro-text--welcome {
+	height: 43px;
+	margin-top: 76px;
+	margin-bottom: 10px;
+}
+
+.page-header__intro-text--gorgeous {
+	width: 256px;
+	margin-bottom: 52px;
+}
+
+.page-header__intro-text--sedona {
+	height: 78px;
+	margin-bottom: 56px;
+}
+
+.page-header__intro-text--grand-canyon {
+	height: 80px;
+}
 
 .page-menu {
 	position: absolute;

@@ -3,11 +3,68 @@
 }
 
 .page-header__intro {
-  background: url('../img/intro.jpg') 50% 0 no-repeat;
+  background: url('../img/photo-background@1x.jpg') 50% 0 no-repeat;
+  background-size: auto 512px;
   height: 390px;
-  
-  .hidden-text;
+
+  text-align: center;
   .triangle-bottom (100px, 10deg, @color-fill-background);
   
   z-index: 1;
 }
+
+.page-header__intro-text--welcome {
+  height: 33px;
+  fill: @color-fill-featured;
+  margin-top: 47px;
+  margin-bottom: 10px;
+}
+
+.page-header__intro-text--gorgeous {
+  width: 196px;
+  fill: @color-fill-accent;
+  margin-bottom: 60px;
+}
+
+.page-header__intro-text--sedona {
+  height: 48px;
+  fill: @color-fill-background;
+  margin-bottom: 67px;
+}
+
+.page-header__intro-text--grand-canyon {
+  height: 54px;
+  fill: @color-fill-background;
+}
+
+.page-header__intro-text--hidden {
+  display: block;
+  .hidden-text;
+}
+
+@media (min-width: @screen-sm-min) { 
+  .page-header__intro {
+    height: 512px; 
+  }
+  
+  .page-header__intro-text--welcome {
+    height: 43px;
+    margin-top: 76px;
+    margin-bottom: 10px;
+  }
+
+  .page-header__intro-text--gorgeous {
+    width: 256px;
+    margin-bottom: 52px;
+  }
+
+  .page-header__intro-text--sedona {
+    height: 78px;
+    margin-bottom: 56px;
+  }
+
+  .page-header__intro-text--grand-canyon {
+    height: 80px;
+  }
+}
+
