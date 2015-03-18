@@ -449,9 +449,9 @@ body {
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	-webkit-align-items: baseline;
-	-ms-flex-align: baseline;
-	align-items: baseline;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
 
 .search-form-column:first-child {
@@ -498,11 +498,18 @@ body {
 	background: url('../img/calendar.png') 50% 50% no-repeat;
 }
 
+.search-form-input--number {
+	text-align: center;
+	padding-left: 0;
+	padding-right: 0;
+}
+
 .search-form-input-panel {
 	background-color: #f2f2f2;
-	display: block;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
 	box-sizing: border-box;
-	width: 100%;
 	border: none;
 	padding: 0;
 }
@@ -512,6 +519,9 @@ body {
 	vertical-align: middle;
 	height: 38px;
 	width: 38px;
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
 }
 
 .search-form-input-panel__counter--decrease {
@@ -524,16 +534,7 @@ body {
 
 .search-form-input-panel__input-wrapper {
 	display: inline-block;
-	vertical-align: middle;
 	box-sizing: border-box;
-	width: 100%;
-}
-
-.search-form-input-panel__input-wrapper--both-tools {
-	padding-left: 30px;
-	padding-right: 30px;
-	margin-left: -45px;
-	margin-right: -45px;
 }
 
 .search-form-submit {
@@ -913,6 +914,7 @@ body {
 
 .search-form-label {
 	width: 115px;
+	margin-bottom: 0;
 }
 
 .search-form-input {

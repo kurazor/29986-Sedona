@@ -1,9 +1,8 @@
 .search-form-input-panel {
   background-color: @color-fill-input;
 
-  display: block;
+  display: flex;
   box-sizing: border-box;
-  width: 100%;
   
   border: none;
   padding: 0;
@@ -14,6 +13,8 @@
   vertical-align: middle;
   height: 38px;
   width: 38px;
+  
+  flex-shrink: 0;
 }
 
 .search-form-input-panel__counter--decrease {  
@@ -23,19 +24,10 @@
 .search-form-input-panel__counter--increase {
   background: url('../img/plus.png') 50% 50% no-repeat;
 }
-
+ 
 .search-form-input-panel__input-wrapper {
   display: inline-block;
-  vertical-align: middle;
   box-sizing: border-box;
-  width: 100%;
-}
-
-.search-form-input-panel__input-wrapper--both-tools {
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-left: -45px;
-  margin-right: -45px;
 }
 
 @media (min-width: @screen-sm-min) { 
