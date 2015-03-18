@@ -2,6 +2,10 @@
   background: @color-fill-background;
 }
 
+.info--list-item {
+  background: @color-fill-normal;  
+}
+
 .info--list-item + .info--list-item {
   background: @color-fill-normal;
 }
@@ -16,4 +20,32 @@
 
 .info__image {
   .align-center;
+}
+
+@media (min-width: @screen-sm-min) { 
+  .info {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .info--reversed {
+    flex-direction: row-reverse; 
+  }
+  
+  .info--featured {
+    width: 100%;
+  }
+  
+  .info__image {
+    width: 66%; 
+  }
+  
+  .info--list-item {
+    width: 33%; 
+  }
+  
+  .info--list-item + .info--list-item:before {
+    display: none;
+  }
 }

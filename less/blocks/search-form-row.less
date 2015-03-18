@@ -2,6 +2,20 @@
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 20px;
-  margin-bottom: 20px;
-  .clearfix;
+  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+@media (min-width: @screen-sm-min) { 
+  .search-form-row {
+    padding-left: 54px;
+    padding-right: 54px;
+    margin-top: 30px;
+  }
+  
+  .search-form-row:first-child {
+    margin-top: 54px;
+  }
 }
