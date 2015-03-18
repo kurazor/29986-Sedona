@@ -1,3 +1,7 @@
+.search {
+  padding-bottom: 20px;
+}
+
 .search__header-title {
   color: @text-color-normal;
   text-transform: uppercase;
@@ -37,4 +41,20 @@
   
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+@media (min-width: @screen-sm-min) { 
+  .search {
+    background-color: @color-fill-background;
+    
+    max-width: 568px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin-bottom: -375px;
+    position: relative;
+    z-index: 2;
+    
+    padding-bottom: 54px;
+  }
 }

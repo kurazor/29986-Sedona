@@ -1,6 +1,17 @@
 .page-footer {
-  background: url('../img/map.jpg') 50% 0 no-repeat;
+  background-image: url('../img/map-medium.jpg');
+  background-position: 50% 0;
+  background-repeat: no-repeat;
   padding-top: 361px;
   
   box-shadow: inset 0 @footer-shadow-height @footer-shadow-height -@footer-shadow-height @footer-shadow-color;
+  
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: @screen-sm-min) { 
+  .page-footer {
+    padding-top: 474px;
+  }
 }

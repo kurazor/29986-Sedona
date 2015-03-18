@@ -17,3 +17,26 @@
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
+@media (min-width: @screen-sm-min) { 
+  .page-footer-panel {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .page-footer-panel__hashtag {
+    padding: 0 10px;
+    width: 33%;
+  }
+
+  .page-footer-panel__socialwrapper {
+    margin: 0;
+    width: 34%;
+  }
+  
+  .page-footer-panel__authorswrapper {
+    width: 33%;
+  }
+}
