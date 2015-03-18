@@ -28,3 +28,19 @@
   
   .triangle-bottom (200px, 10deg, @color-fill-featured);
 }
+
+.page-content__information {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @screen-sm-min) { 
+  .page-content__description {
+    .triangle-bottom-none ();
+  }
+  
+  .page-content__information {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

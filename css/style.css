@@ -214,6 +214,15 @@ body {
 	transform: skewY(-10deg);
 }
 
+.page-content__information {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
 .info {
 	background: #ffffff;
 }
@@ -237,6 +246,7 @@ body {
 }
 
 .info-header {
+	box-sizing: border-box;
 	background-color: #eeeeee;
 	padding: 30px;
 }
@@ -311,6 +321,12 @@ body {
 
 .info-list {
 	list-style: none;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	margin: 0;
 	padding: 10px;
 	padding-right: 20px;
@@ -684,6 +700,98 @@ body {
 
 .page-menu-panel__expand-button {
 	display: none;
+}
+
+.page-content__description:before,
+.page-content__description:after {
+	display: none;
+}
+
+.page-content__information {
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.info {
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.info--reversed {
+	-webkit-flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
+}
+
+.info--featured {
+	width: 100%;
+}
+
+.info__image {
+	width: 66%;
+}
+
+.info--list-item {
+	width: 33%;
+}
+
+.info--list-item + .info--list-item:before {
+	display: none;
+}
+
+.info-header--featured {
+	width: 34%;
+}
+
+.info-list {
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+
+.info-list-item {
+	padding-left: 0;
+	padding-top: 110px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+.info-list-item:before {
+	width: 75px;
+	height: 75px;
+	background-size: 75px 75px;
+	top: 20px;
+	left: 50%;
+	margin-left: -37px;
+}
+
+.info-list-item--house {
+	-webkit-order: 1;
+	-ms-flex-order: 1;
+	order: 1;
+}
+
+.info-list-item--souvenirs {
+	-webkit-order: 3;
+	-ms-flex-order: 3;
+	order: 3;
+}
+
+.info-list-item--meal {
+	-webkit-order: 2;
+	-ms-flex-order: 2;
+	order: 2;
 }
 
 }

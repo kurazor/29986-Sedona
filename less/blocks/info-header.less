@@ -1,4 +1,5 @@
 .info-header {
+  box-sizing: border-box;
   background-color: @color-fill-normal;
   padding: 30px;
 }
@@ -74,4 +75,10 @@
 .info-header--featured__counter:before,
 .info-header--featured__counter:after {
   background: @text-color-inverted;
+}
+
+@media (min-width: @screen-sm-min) { 
+  .info-header--featured {
+    width: 34%;
+  }
 }

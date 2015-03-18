@@ -44,3 +44,33 @@
   font-weight: 400;
   line-height: 21px;
 }
+
+@media (min-width: @screen-sm-min) { 
+  .info-list-item {
+    padding-left: 0;
+    padding-top: 110px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  
+  .info-list-item:before {
+    width: 75px;
+    height: 75px;
+    background-size: 75px 75px;
+    top: 20px;
+    left: 50%;
+    margin-left: -37px;
+  }
+  
+  .info-list-item--house {
+    order: 1; 
+  }
+  
+  .info-list-item--souvenirs {
+    order: 3; 
+  }
+  
+  .info-list-item--meal {
+    order: 2; 
+  }
+}
