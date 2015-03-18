@@ -43,14 +43,23 @@
 }
 
 @media (min-width: @screen-sm-min) { 
+  .page-header {
+    .triangle-bottom (100px, 5deg, @color-fill-background);
+    &:before,
+    &:after {
+     z-index: 2; 
+    }
+  }
+  
   .page-header__intro {
     height: 512px; 
+    .triangle-bottom-sized (450px, 100px, 10deg,  @color-fill-background);
   }
   
   .page-header__intro-text--welcome {
     height: 43px;
     margin-top: 76px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
   }
 
   .page-header__intro-text--gorgeous {
