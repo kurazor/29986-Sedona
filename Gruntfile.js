@@ -66,11 +66,32 @@ module.exports = function(grunt) {
           livereload: true
         },
       },
+    },
+    
+    grunticon: {
+      images: {
+        files: [{
+          expand: true,
+          cwd: '_sources/sprites',
+          src: ['*.svg', '*.png'],
+          dest: 'css/sprites'
+        }],
+        options: {
+          datasvgcss: 'icons-svg.css',
+          datapngcss: 'icons-png.css',
+          urlpngcss:  'icons-fallback.css',
+          loadersnippet: '../../js/spriteloader.js',
+          pngfolder: '../../img/sprites',
+          pngpath: 'img/sprites',
+          compressPNG: true,
+        }
+      }
     }
 
   });
     
   grunt.loadNpmTasks('grunt-lintspaces');
+  grunt.loadNpmTasks('grunt-grunticon');
 
   grunt.registerTask('default', [
     'less',
@@ -84,5 +105,8 @@ module.exports = function(grunt) {
     'autoprefixer',
     'cmq',
   ]);
-
+    
+  grunt.registerTask('images', [
+    'grunticon:images',
+  ]);
 };
