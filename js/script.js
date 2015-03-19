@@ -1,1 +1,1 @@
-grunticon(["css/sprites/icons-svg.css", "css/sprites/icons-png.css", "css/sprites/icons-fallback.css"]);
+grunticon(["css/sprites/icons-svg.css", "css/sprites/icons-png.css", "css/sprites/icons-fallback.css"], grunticon.svgLoadedCallback);
