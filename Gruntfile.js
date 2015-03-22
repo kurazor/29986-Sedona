@@ -84,6 +84,8 @@ module.exports = function(grunt) {
           pngfolder: '../../img/sprites',
           pngpath: 'img/sprites',
           compressPNG: true,
+          enhanceSVG: true,
+          corsEmbed: true
         }
       }
     }
