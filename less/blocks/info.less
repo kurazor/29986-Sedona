@@ -18,8 +18,14 @@
   background: darken(@color-fill-normal, 15%);
 }
 
+.info__imagewrapper {
+  display: flex;
+  justify-content: center;
+  height: 256px;
+}
+
 .info__image {
-  .align-center;
+  max-width: 100%; 
 }
 
 @media (min-width: @screen-sm-min) { 
@@ -37,7 +43,7 @@
     width: 100%;
   }
   
-  .info__image {
+  .info__imagewrapper {
     width: 66%; 
   }
   
