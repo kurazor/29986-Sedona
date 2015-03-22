@@ -23,6 +23,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-grunticon": "^2.1.6",
     "grunt-lintspaces": "^0.6.0",
+    "grunt-svginject": "0.0.2",
     "load-grunt-tasks": "^3.0.0"
   }
 }

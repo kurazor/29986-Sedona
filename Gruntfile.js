@@ -88,12 +88,22 @@ module.exports = function(grunt) {
           corsEmbed: true
         }
       }
+    },
+    
+    svginject: {
+      all : {
+        options: {},
+        files: {
+           'js/svginjector.js': ['_sources/svg/*.svg'],
+        }
+      }
     }
 
   });
     
   grunt.loadNpmTasks('grunt-lintspaces');
   grunt.loadNpmTasks('grunt-grunticon');
+  grunt.loadNpmTasks('grunt-svginject');
 
   grunt.registerTask('default', [
     'less',
@@ -110,5 +120,6 @@ module.exports = function(grunt) {
     
   grunt.registerTask('images', [
     'grunticon:images',
+    'svginject:all'
   ]);
 };

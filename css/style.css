@@ -49,34 +49,43 @@ body {
 	transform: skewY(-10deg);
 }
 
-.page-header__intro-text {
-	text-indent: -10000px;
-	overflow: hidden;
-	background-position: 50% 0;
+svg.page-header__intro-text--welcome,
+.page-header__intro-text--welcome svg {
+	fill: #81b3d2;
+	height: 33px;
+}
+
+svg.page-header__intro-text--gorgeous,
+.page-header__intro-text--gorgeous svg {
+	fill: #766357;
+	width: 196px;
+}
+
+svg.page-header__intro-text--sedona,
+.page-header__intro-text--sedona svg {
+	fill: #ffffff;
+	width: 280px;
+	height: 48px;
+}
+
+svg.page-header__intro-text--grand-canyon,
+.page-header__intro-text--grand-canyon svg {
+	fill: #ffffff;
+	width: 197px;
+	height: 54px;
 }
 
 .page-header__intro-text--welcome {
-	background-size: auto 33px;
-	fill: #81b3d2;
 	margin-top: 47px;
 	margin-bottom: 10px;
 }
 
 .page-header__intro-text--gorgeous {
-	background-size: 196px auto;
-	fill: #766357;
 	margin-bottom: 60px;
 }
 
 .page-header__intro-text--sedona {
-	background-size: auto 48px;
-	fill: #ffffff;
 	margin-bottom: 67px;
-}
-
-.page-header__intro-text--grand-canyon {
-	background-size: auto 54px;
-	fill: #ffffff;
 }
 
 .page-menu {
@@ -701,24 +710,39 @@ body {
 	transform: skewY(-10deg);
 }
 
+svg.page-header__intro-text--welcome,
+.page-header__intro-text--welcome svg {
+	height: 43px;
+}
+
+svg.page-header__intro-text--gorgeous,
+.page-header__intro-text--gorgeous svg {
+	width: 256px;
+}
+
+svg.page-header__intro-text--sedona,
+.page-header__intro-text--sedona svg {
+	width: 458px;
+	height: 78px;
+}
+
+svg.page-header__intro-text--grand-canyon,
+.page-header__intro-text--grand-canyon svg {
+	width: 295px;
+	height: 80px;
+}
+
 .page-header__intro-text--welcome {
-	background-size: auto 43px;
 	margin-top: 76px;
 	margin-bottom: 10px;
 }
 
 .page-header__intro-text--gorgeous {
-	background-size: 256px auto;
 	margin-bottom: 52px;
 }
 
 .page-header__intro-text--sedona {
-	background-size: auto 78px;
 	margin-bottom: 56px;
-}
-
-.page-header__intro-text--grand-canyon {
-	background-size: auto 80px;
 }
 
 .page-menu {
