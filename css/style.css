@@ -49,34 +49,43 @@ body {
 	transform: skewY(-10deg);
 }
 
-.page-header__intro-text--welcome {
-	height: 33px;
+svg.page-header__intro-text--welcome,
+.page-header__intro-text--welcome svg {
 	fill: #81b3d2;
+	height: 33px;
+}
+
+svg.page-header__intro-text--gorgeous,
+.page-header__intro-text--gorgeous svg {
+	fill: #766357;
+	width: 196px;
+}
+
+svg.page-header__intro-text--sedona,
+.page-header__intro-text--sedona svg {
+	fill: #ffffff;
+	width: 280px;
+	height: 48px;
+}
+
+svg.page-header__intro-text--grand-canyon,
+.page-header__intro-text--grand-canyon svg {
+	fill: #ffffff;
+	width: 197px;
+	height: 54px;
+}
+
+.page-header__intro-text--welcome {
 	margin-top: 47px;
 	margin-bottom: 10px;
 }
 
 .page-header__intro-text--gorgeous {
-	width: 196px;
-	fill: #766357;
 	margin-bottom: 60px;
 }
 
 .page-header__intro-text--sedona {
-	height: 48px;
-	fill: #ffffff;
 	margin-bottom: 67px;
-}
-
-.page-header__intro-text--grand-canyon {
-	height: 54px;
-	fill: #ffffff;
-}
-
-.page-header__intro-text--hidden {
-	display: block;
-	text-indent: -10000px;
-	overflow: hidden;
 }
 
 .page-menu {
@@ -245,10 +254,18 @@ body {
 	background: #c8c8c8;
 }
 
+.info__imagewrapper {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	height: 256px;
+}
+
 .info__image {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	max-width: 100%;
 }
 
 .info-header {
@@ -585,27 +602,39 @@ body {
 }
 
 .social {
-	text-align: center;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.social__button + .social__button {
+	margin-left: 5px;
+}
+
+svg.social__button,
+.social__button svg {
+	fill: #ffffff;
+	vertical-align: middle;
 }
 
 .social__button {
-	display: inline-block;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background-color: #81b3d2;
 	width: 46px;
 	height: 48px;
-	text-indent: -10000px;
-	overflow: hidden;
-}
-
-.social__button--twitter {
-	background: url('../img/twitter.png') 50% 50% no-repeat;
-}
-
-.social__button--facebook {
-	background: url('../img/facebook.png') 50% 50% no-repeat;
-}
-
-.social__button--youtube {
-	background: url('../img/youtube.png') 50% 50% no-repeat;
+	padding: 10px;
+	box-sizing: border-box;
 }
 
 .page-authors {
@@ -621,17 +650,25 @@ body {
 }
 
 .page-authors__developer-logo {
+	text-indent: -10000px;
+	overflow: hidden;
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 9px;
 	margin-right: 9px;
+	width: 27px;
+	height: 30px;
 }
 
 .page-authors__academy-logo {
+	text-indent: -10000px;
+	overflow: hidden;
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 9px;
 	margin-right: 9px;
+	width: 27px;
+	height: 33px;
 }
 
 @media (min-width: 720px) {
@@ -671,6 +708,7 @@ body {
 }
 
 .page-header__intro {
+	background-size: 100% auto;
 	height: 512px;
 	position: relative;
 	overflow: hidden;
@@ -700,24 +738,39 @@ body {
 	transform: skewY(-10deg);
 }
 
-.page-header__intro-text--welcome {
+svg.page-header__intro-text--welcome,
+.page-header__intro-text--welcome svg {
 	height: 43px;
+}
+
+svg.page-header__intro-text--gorgeous,
+.page-header__intro-text--gorgeous svg {
+	width: 256px;
+}
+
+svg.page-header__intro-text--sedona,
+.page-header__intro-text--sedona svg {
+	width: 458px;
+	height: 78px;
+}
+
+svg.page-header__intro-text--grand-canyon,
+.page-header__intro-text--grand-canyon svg {
+	width: 295px;
+	height: 80px;
+}
+
+.page-header__intro-text--welcome {
 	margin-top: 76px;
 	margin-bottom: 10px;
 }
 
 .page-header__intro-text--gorgeous {
-	width: 256px;
 	margin-bottom: 52px;
 }
 
 .page-header__intro-text--sedona {
-	height: 78px;
 	margin-bottom: 56px;
-}
-
-.page-header__intro-text--grand-canyon {
-	height: 80px;
 }
 
 .page-menu {
@@ -842,7 +895,7 @@ body {
 	width: 100%;
 }
 
-.info__image {
+.info__imagewrapper {
 	width: 66%;
 }
 

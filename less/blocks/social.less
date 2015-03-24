@@ -1,23 +1,25 @@
 .social {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.social__button + .social__button {
+  margin-left: 5px;
+}
+
+svg.social__button, .social__button svg {
+  fill: @color-fill-background;
+  vertical-align: middle;
 }
 
 .social__button {
-  display: inline-block;
-  width: 46px;
-  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
-  .hidden-text;
-}
-
-.social__button--twitter {
-  background: url('../img/twitter.png') 50% 50% no-repeat; 
-}
-
-.social__button--facebook {
-  background: url('../img/facebook.png') 50% 50% no-repeat; 
-}
-
-.social__button--youtube {
-  background: url('../img/youtube.png') 50% 50% no-repeat; 
+  background-color: @color-fill-featured;
+  width: 46px;
+  height: 48px;  
+  padding: 10px;
+  box-sizing: border-box;
 }

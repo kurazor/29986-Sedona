@@ -13,33 +13,42 @@
   z-index: 1;
 }
 
-.page-header__intro-text--welcome {
-  height: 33px;
+svg.page-header__intro-text--welcome, .page-header__intro-text--welcome svg {
   fill: @color-fill-featured;
+  height: 33px;
+}
+
+svg.page-header__intro-text--gorgeous, .page-header__intro-text--gorgeous svg {
+  fill: @color-fill-accent;
+  width: 196px;
+}
+
+svg.page-header__intro-text--sedona, .page-header__intro-text--sedona svg {
+  fill: @color-fill-background;
+  width: 280px;
+  height: 48px;
+}
+
+svg.page-header__intro-text--grand-canyon, .page-header__intro-text--grand-canyon svg {
+  fill: @color-fill-background;
+  width: 197px;
+  height: 54px;
+}
+
+.page-header__intro-text--welcome {
   margin-top: 47px;
   margin-bottom: 10px;
 }
 
 .page-header__intro-text--gorgeous {
-  width: 196px;
-  fill: @color-fill-accent;
   margin-bottom: 60px;
 }
 
 .page-header__intro-text--sedona {
-  height: 48px;
-  fill: @color-fill-background;
   margin-bottom: 67px;
 }
 
 .page-header__intro-text--grand-canyon {
-  height: 54px;
-  fill: @color-fill-background;
-}
-
-.page-header__intro-text--hidden {
-  display: block;
-  .hidden-text;
 }
 
 @media (min-width: @screen-sm-min) { 
@@ -52,28 +61,40 @@
   }
   
   .page-header__intro {
+    background-size: 100% auto;
     height: 512px; 
     .triangle-bottom-sized (450px, 100px, 10deg,  @color-fill-background);
   }
   
-  .page-header__intro-text--welcome {
+  svg.page-header__intro-text--welcome, .page-header__intro-text--welcome svg {
     height: 43px;
+  }
+
+  svg.page-header__intro-text--gorgeous, .page-header__intro-text--gorgeous svg {
+    width: 256px;
+  }
+
+  svg.page-header__intro-text--sedona, .page-header__intro-text--sedona svg {
+    width: 458px;
+    height: 78px;
+  }
+
+  svg.page-header__intro-text--grand-canyon, .page-header__intro-text--grand-canyon svg {
+    width: 295px;
+    height: 80px;
+  }
+  
+  .page-header__intro-text--welcome {
     margin-top: 76px;
     margin-bottom: 10px; 
   }
 
   .page-header__intro-text--gorgeous {
-    width: 256px;
     margin-bottom: 52px;
   }
 
   .page-header__intro-text--sedona {
-    height: 78px;
     margin-bottom: 56px;
-  }
-
-  .page-header__intro-text--grand-canyon {
-    height: 80px;
   }
 }
 
