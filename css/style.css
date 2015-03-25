@@ -138,11 +138,12 @@ svg.page-header__intro-text--grand-canyon,
 	position: absolute;
 	right: 0px;
 	top: 0px;
-	background: url('../img/collapse-button.png') 50% 50% no-repeat;
-	width: 55px;
 	height: 55px;
-	text-indent: -10000px;
-	overflow: hidden;
+	padding: 16px 20px;
+}
+
+.page-menu__collapse-button svg {
+	fill: #ffffff;
 }
 
 .page-menu-panel {
@@ -156,22 +157,37 @@ svg.page-header__intro-text--grand-canyon,
 	clear: both;
 }
 
+.page-menu-panel__logo-triangle {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 138px;
+	height: 70px;
+	margin-left: -69px;
+	z-index: 2;
+	fill: #81b3d2;
+}
+
 .page-menu-panel__logo {
 	position: absolute;
 	top: 0;
 	left: 50%;
-	margin-left: -69px;
+	width: 67px;
+	height: 56px;
+	margin-left: -33px;
 	z-index: 2;
 }
 
 .page-menu-panel__expand-button {
-	text-indent: -10000px;
-	overflow: hidden;
 	float: right;
 	display: inline-block;
-	background: url('../img/expand-button.png') 50% 50% no-repeat;
-	width: 56px;
+	box-sizing: border-box;
 	height: 56px;
+	padding: 17px 20px;
+}
+
+.page-menu-panel__expand-button svg {
+	fill: #81b3d2;
 }
 
 .page-content__header {
@@ -262,6 +278,7 @@ svg.page-header__intro-text--grand-canyon,
 	-ms-flex-pack: center;
 	justify-content: center;
 	height: 256px;
+	overflow: hidden;
 }
 
 .info__image {
@@ -358,31 +375,44 @@ svg.page-header__intro-text--grand-canyon,
 }
 
 .info-list-item {
-	position: relative;
-	padding-left: 60px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.info-list-item__imagewrapper {
+	padding: 0 12px;
+	text-align: center;
+	width: 37px;
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	-webkit-flex-grow: 0;
+	-ms-flex-positive: 0;
+	flex-grow: 0;
+}
+
+.info-list-item__textwrapper {
+	text-align: left;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
 	padding-top: 10px;
-	padding-bottom: 15px;
+	padding-bottom: 22px;
 }
 
-.info-list-item:before {
-	content: '';
-	display: block;
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	top: 0;
-	left: 10px;
+.info-list-item__image,
+.info-list-item__image svg {
+	display: inline-block;
+	width: 37px;
+	height: 37px;
+	fill: #81b3d2;
 }
 
-.info-list-item--house:before {
-	background: url('../img/house.png') 50% 50% no-repeat;
-}
-
-.info-list-item--souvenirs:before {
-	background: url('../img/souvenir.png') 50% 50% no-repeat;
-}
-
-.info-list-item--meal:before {
+.info-list-item__image--meal {
 	background: url('../img/meal.png') 50% 50% no-repeat;
 }
 
@@ -505,6 +535,7 @@ svg.page-header__intro-text--grand-canyon,
 	position: relative;
 	border: none;
 	padding: 6px 12px;
+	padding-right: 6px;
 }
 
 .search-form-input--date:after {
@@ -514,7 +545,8 @@ svg.page-header__intro-text--grand-canyon,
 	right: 0;
 	width: 26px;
 	height: 26px;
-	background: url('../img/calendar.png') 50% 50% no-repeat;
+	background: url('../img/icon-calendar.svg') 50% 50% no-repeat;
+	opacity: 0.2;
 }
 
 .search-form-input--number {
@@ -544,11 +576,15 @@ svg.page-header__intro-text--grand-canyon,
 }
 
 .search-form-input-panel__counter--decrease {
-	background: url('../img/minus.png') 50% 50% no-repeat;
+	background: url('../img/icon-minus.svg') 50% 50% no-repeat;
+	background-size: 11px 11px;
+	opacity: 0.2;
 }
 
 .search-form-input-panel__counter--increase {
-	background: url('../img/plus.png') 50% 50% no-repeat;
+	background: url('../img/icon-plus.svg') 50% 50% no-repeat;
+	background-size: 11px 11px;
+	opacity: 0.2;
 }
 
 .search-form-input-panel__input-wrapper {
@@ -708,7 +744,7 @@ svg.social__button,
 }
 
 .page-header__intro {
-	background-size: 100% auto;
+	background-size: 120% auto;
 	height: 512px;
 	position: relative;
 	overflow: hidden;
@@ -883,6 +919,9 @@ svg.page-header__intro-text--grand-canyon,
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
 }
 
 .info--reversed {
@@ -943,20 +982,38 @@ svg.page-header__intro-text--grand-canyon,
 }
 
 .info-list-item {
-	padding-left: 46px;
-	padding-right: 46px;
-	padding-top: 110px;
-	padding-bottom: 15px;
-	text-align: center;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
 
-.info-list-item:before {
-	width: 75px;
-	height: 75px;
-	background-size: 75px 75px;
-	top: 20px;
-	left: 50%;
-	margin-left: -37px;
+.info-list-item__imagewrapper {
+	padding: 0;
+	padding-top: 30px;
+	text-align: center;
+	width: auto;
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	-webkit-flex-grow: 0;
+	-ms-flex-positive: 0;
+	flex-grow: 0;
+}
+
+.info-list-item__textwrapper {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 22px;
+}
+
+.info-list-item__image,
+.info-list-item__image svg {
+	width: 76px;
+	height: 76px;
+	background-size: 76px;
 }
 
 .info-list-item--house {
