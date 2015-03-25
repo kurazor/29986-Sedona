@@ -1,6 +1,15 @@
 .search-form-input {
   background-color: @color-fill-input;
   
+  &:hover {
+    background-color: @color-fill-input-hover;
+  }
+  
+  &:active,
+  &:focus {
+    background-color: @color-fill-input-focused; 
+  }
+  
   color: @text-color-normal;
   text-transform: uppercase;
   font-size: 14px;

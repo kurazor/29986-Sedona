@@ -15,6 +15,15 @@
   width: 38px;
   
   flex-shrink: 0;
+    
+  &:hover {
+    background-color: @color-fill-input-hover;
+  }
+  
+  &:active,
+  &:focus {
+    background-color: @color-fill-input-focused; 
+  }
 }
 
 .search-form-input-panel__counter--decrease {  

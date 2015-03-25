@@ -134,8 +134,7 @@ svg.page-header__intro-text--grand-canyon,
 
 .page-menu__list a,
 .page-menu__list a:hover,
-.page-menu__list a:active,
-.page-menu__list a:focus {
+.page-menu__list a:active {
 	color: #ffffff;
 	text-decoration: none;
 }
@@ -545,6 +544,15 @@ svg.page-header__intro-text--grand-canyon,
 	padding-right: 6px;
 }
 
+.search-form-input:hover {
+	background-color: #ebebeb;
+}
+
+.search-form-input:active,
+.search-form-input:focus {
+	background-color: #ffffff;
+}
+
 .search-form-input--date:after {
 	content: '';
 	display: block;
@@ -582,6 +590,15 @@ svg.page-header__intro-text--grand-canyon,
 	flex-shrink: 0;
 }
 
+.search-form-input-panel__counter:hover {
+	background-color: #ebebeb;
+}
+
+.search-form-input-panel__counter:active,
+.search-form-input-panel__counter:focus {
+	background-color: #ffffff;
+}
+
 .search-form-input-panel__counter--decrease {
 	background: url('../img/icon-minus.svg') 50% 50% no-repeat;
 	background-size: 11px 11px;
@@ -613,6 +630,16 @@ svg.page-header__intro-text--grand-canyon,
 	width: 100%;
 	padding-top: 16px;
 	padding-bottom: 16px;
+}
+
+.search-form-submit:hover {
+	background-color: #669ec0;
+	color: #ffffff;
+}
+
+.search-form-submit:active {
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .page-footer {
@@ -663,6 +690,16 @@ svg.social__button,
 	vertical-align: middle;
 }
 
+svg.social__button:hover,
+.social__button svg:hover {
+	fill: #ffffff;
+}
+
+svg.social__button:active,
+.social__button svg:active {
+	fill: rgba(255, 255, 255, 0.3);
+}
+
 .social__button {
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -678,6 +715,14 @@ svg.social__button,
 	height: 48px;
 	padding: 10px;
 	box-sizing: border-box;
+}
+
+.social__button:hover {
+	background-color: #669ec0;
+}
+
+.social__button:active {
+	background-color: #5496bd;
 }
 
 .page-authors {
@@ -863,13 +908,15 @@ svg.page-header__intro-text--grand-canyon,
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 26px;
+	color: #000000;
 }
 
-.page-menu__list a,
-.page-menu__list a:hover,
-.page-menu__list a:active,
-.page-menu__list a:focus {
-	color: #000000;
+.page-menu__list a:hover {
+	color: #81b3d2;
+}
+
+.page-menu__list a:active {
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .page-menu__collapse-button {

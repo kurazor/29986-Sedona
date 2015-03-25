@@ -1,7 +1,17 @@
 .search-form-submit {
   background-color: @color-fill-featured;
-  
   color: @text-color-inverted;
+  
+ &:hover {
+    background-color: @color-fill-featured-hover;
+    color: @text-color-inverted-hover;
+  }
+
+  &:active {
+    background-color: @color-fill-featured-down;
+    color: @text-color-inverted-down;
+  }
+  
   text-transform: uppercase;
   font-size: 21px;
   font-weight: 700;
