@@ -138,11 +138,12 @@ svg.page-header__intro-text--grand-canyon,
 	position: absolute;
 	right: 0px;
 	top: 0px;
-	background: url('../img/collapse-button.png') 50% 50% no-repeat;
-	width: 55px;
 	height: 55px;
-	text-indent: -10000px;
-	overflow: hidden;
+	padding: 16px 20px;
+}
+
+.page-menu__collapse-button svg {
+	fill: #ffffff;
 }
 
 .page-menu-panel {
@@ -178,13 +179,15 @@ svg.page-header__intro-text--grand-canyon,
 }
 
 .page-menu-panel__expand-button {
-	text-indent: -10000px;
-	overflow: hidden;
 	float: right;
 	display: inline-block;
-	background: url('../img/expand-button.png') 50% 50% no-repeat;
-	width: 56px;
+	box-sizing: border-box;
 	height: 56px;
+	padding: 17px 20px;
+}
+
+.page-menu-panel__expand-button svg {
+	fill: #81b3d2;
 }
 
 .page-content__header {

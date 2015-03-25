@@ -30,13 +30,16 @@
 }
 
 .page-menu-panel__expand-button {
-  .hidden-text;
   float: right;
   
   display: inline-block;
-  background: url('../img/expand-button.png') 50% 50% no-repeat;
-  width: 56px;
+  box-sizing: border-box;
   height: 56px;
+  padding: 17px 20px;
+}
+
+.page-menu-panel__expand-button svg {
+  fill: @color-fill-featured; 
 }
 
 @media (min-width: @screen-sm-min) { 

@@ -9,6 +9,14 @@ SVGform_logo_triangle[i].innerHTML = '<?xml version="1.0" encoding="utf-8"?>  <!
 }
 
 
+// SVG icon_cross
+var SVGicon_cross = document.querySelectorAll('.svg-icon_cross');
+
+for (i = 0; i < SVGicon_cross.length; ++i) {
+SVGicon_cross[i].innerHTML = '<?xml version="1.0" encoding="utf-8"?>  <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"    width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">  <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199    22.199,19.396 13.903,11.1 "/>  </svg>  ';
+}
+
+
 // SVG icon_facebook
 var SVGicon_facebook = document.querySelectorAll('.svg-icon_facebook');
 
@@ -30,6 +38,14 @@ var SVGicon_house = document.querySelectorAll('.svg-icon_house');
 
 for (i = 0; i < SVGicon_house.length; ++i) {
 SVGicon_house[i].innerHTML = '<?xml version="1.0" encoding="utf-8"?>  <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"    width="74.696px" height="72.345px" viewBox="0 0 74.696 72.345" enable-background="new 0 0 74.696 72.345" xml:space="preserve">  <g>   <path d="M29.503,43.845v0.5v18.062v1.469v1.469h16v-2v-0.938V44.345v-0.5v-2.438h-16V43.845z M42.566,62.407H32.441V44.345h10.125    V62.407z"/>   <path d="M72.62,39.44l2.076-2.078l-9.908-9.913V0.47h-0.941H61.85h-7.938v0h-2.938v13.162L37.349,0L0,37.363l2.077,2.078    l7.832-7.832v37.799H5.971v2.938h63.875v-2.938h-5.059V31.608L72.62,39.44z M53.913,3.408h7.938v21.104l-7.938-7.94V3.408z     M61.85,69.407H12.846V28.671L37.348,4.169L61.85,28.671V69.407z"/>   <path d="M29.753,27.21c0,4.28,3.47,7.75,7.75,7.75s7.75-3.47,7.75-7.75s-3.47-7.75-7.75-7.75S29.753,22.93,29.753,27.21z     M37.503,22.241c2.745,0,4.97,2.225,4.97,4.97s-2.225,4.97-4.97,4.97c-2.745,0-4.97-2.225-4.97-4.97S34.759,22.241,37.503,22.241z"    />   <rect x="16.909" y="41.407" width="3" height="3.938"/>   <rect x="22.846" y="41.407" width="3" height="3.938"/>   <rect x="16.909" y="47.407" width="3" height="3.938"/>   <rect x="22.846" y="47.407" width="3" height="3.938"/>   <rect x="48.846" y="41.407" width="3" height="3.938"/>   <rect x="54.784" y="41.407" width="3" height="3.938"/>   <rect x="48.846" y="47.407" width="3" height="3.938"/>   <rect x="54.784" y="47.407" width="3" height="3.938"/>  </g>  </svg>  ';
+}
+
+
+// SVG icon_menu
+var SVGicon_menu = document.querySelectorAll('.svg-icon_menu');
+
+for (i = 0; i < SVGicon_menu.length; ++i) {
+SVGicon_menu[i].innerHTML = '<?xml version="1.0" encoding="utf-8"?>  <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"    width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">  <g>   <rect width="22.928" height="3.964"/>   <rect y="9.009" width="22.928" height="3.964"/>   <rect y="18.018" width="22.928" height="3.964"/>  </g>  </svg>  ';
 }
 
 
