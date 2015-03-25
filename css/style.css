@@ -535,6 +535,7 @@ svg.page-header__intro-text--grand-canyon,
 	position: relative;
 	border: none;
 	padding: 6px 12px;
+	padding-right: 6px;
 }
 
 .search-form-input--date:after {
@@ -544,7 +545,8 @@ svg.page-header__intro-text--grand-canyon,
 	right: 0;
 	width: 26px;
 	height: 26px;
-	background: url('../img/calendar.png') 50% 50% no-repeat;
+	background: url('../img/icon-calendar.svg') 50% 50% no-repeat;
+	opacity: 0.2;
 }
 
 .search-form-input--number {
@@ -574,11 +576,15 @@ svg.page-header__intro-text--grand-canyon,
 }
 
 .search-form-input-panel__counter--decrease {
-	background: url('../img/minus.png') 50% 50% no-repeat;
+	background: url('../img/icon-minus.svg') 50% 50% no-repeat;
+	background-size: 11px 11px;
+	opacity: 0.2;
 }
 
 .search-form-input-panel__counter--increase {
-	background: url('../img/plus.png') 50% 50% no-repeat;
+	background: url('../img/icon-plus.svg') 50% 50% no-repeat;
+	background-size: 11px 11px;
+	opacity: 0.2;
 }
 
 .search-form-input-panel__input-wrapper {
