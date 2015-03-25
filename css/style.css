@@ -8,7 +8,14 @@ body {
 }
 
 body {
+	background-color: #f2f2f2;
+}
+
+.page-wrapper {
 	background-color: #ffffff;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .page-header {
@@ -1108,6 +1115,8 @@ svg.page-header__intro-text--grand-canyon,
 }
 
 .page-footer {
+	background-image: url('../img/map-large.jpg');
+	background-position: 50% -20px;
 	padding-top: 474px;
 	box-shadow: none;
 }
@@ -1141,6 +1150,15 @@ svg.page-header__intro-text--grand-canyon,
 
 .page-footer-panel__authorswrapper {
 	width: 33%;
+}
+
+}
+
+@media (min-width: 1200px) {
+
+.page-wrapper {
+	max-width: 1200px;
+	box-shadow: 0 0 15px 0 #dedede;
 }
 
 }
