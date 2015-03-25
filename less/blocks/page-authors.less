@@ -12,21 +12,43 @@
 }
 
 .page-authors__developer-logo {
-  .hidden-text;
   display: inline-block;
   vertical-align: middle;
   margin-left: 9px;
   margin-right: 9px;
   width: 27px;
   height: 30px;
+  
+  & svg {
+    fill: @text-color-normal;
+
+    &:hover {
+      fill: @text-color-normal-hover;
+    }
+
+    &:active {
+      fill: @text-color-normal-down;
+    } 
+  }
 }
 
 .page-authors__academy-logo {
-  .hidden-text;
   display: inline-block;
   vertical-align: middle;
   margin-left: 9px;
   margin-right: 9px;
   width: 27px;
   height: 33px;
+  
+  & svg {
+    fill: @text-color-normal;
+
+    &:hover {
+      fill: @text-color-normal-hover;
+    }
+
+    &:active {
+      fill: @text-color-normal-down;
+    } 
+  }
 }

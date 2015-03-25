@@ -738,8 +738,6 @@ svg.social__button:active,
 }
 
 .page-authors__developer-logo {
-	text-indent: -10000px;
-	overflow: hidden;
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 9px;
@@ -748,15 +746,37 @@ svg.social__button:active,
 	height: 30px;
 }
 
+.page-authors__developer-logo svg {
+	fill: #000000;
+}
+
+.page-authors__developer-logo svg:hover {
+	fill: #81b3d2;
+}
+
+.page-authors__developer-logo svg:active {
+	fill: rgba(0, 0, 0, 0.3);
+}
+
 .page-authors__academy-logo {
-	text-indent: -10000px;
-	overflow: hidden;
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 9px;
 	margin-right: 9px;
 	width: 27px;
 	height: 33px;
+}
+
+.page-authors__academy-logo svg {
+	fill: #000000;
+}
+
+.page-authors__academy-logo svg:hover {
+	fill: #81b3d2;
+}
+
+.page-authors__academy-logo svg:active {
+	fill: rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: 720px) {
