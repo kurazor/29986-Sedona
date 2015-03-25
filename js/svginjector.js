@@ -9,6 +9,14 @@ SVGform_logo_triangle[i].innerHTML = '<?xml version="1.0" encoding="utf-8"?>  <!
 }
 
 
+// SVG icon_calendar
+var SVGicon_calendar = document.querySelectorAll('.svg-icon_calendar');
+
+for (i = 0; i < SVGicon_calendar.length; ++i) {
+SVGicon_calendar[i].innerHTML = '<?xml version="1.0" encoding="utf-8"?>  <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"    width="19.875px" height="21.916px" viewBox="0 0 19.875 21.916" enable-background="new 0 0 19.875 21.916" xml:space="preserve">  <g>   <path d="M17.04,2h-2.081V0h-2v2H6.917V0h-2v2H2.835C1.275,2,0,3.275,0,4.835v14.246c0,1.56,1.275,2.835,2.835,2.835H17.04    c1.56,0,2.835-1.275,2.835-2.835V4.835C19.875,3.275,18.6,2,17.04,2z M17.875,19.081c0,0.453-0.383,0.835-0.835,0.835H2.835    C2.383,19.916,2,19.534,2,19.081V4.835C2,4.382,2.383,4,2.835,4H17.04c0.452,0,0.835,0.382,0.835,0.835V19.081z"/>   <rect x="4.917" y="6.958" width="2" height="2"/>   <rect x="12.959" y="6.958" width="2" height="2"/>   <rect x="8.938" y="6.958" width="2" height="2"/>   <rect x="4.917" y="10.958" width="2" height="2"/>   <rect x="12.959" y="10.958" width="2" height="2"/>   <rect x="8.938" y="10.958" width="2" height="2"/>   <rect x="4.917" y="14.942" width="2" height="2"/>   <rect x="12.959" y="14.942" width="2" height="2"/>   <rect x="8.938" y="14.942" width="2" height="2"/>  </g>  </svg>  ';
+}
+
+
 // SVG icon_cross
 var SVGicon_cross = document.querySelectorAll('.svg-icon_cross');
 
@@ -46,6 +54,22 @@ var SVGicon_menu = document.querySelectorAll('.svg-icon_menu');
 
 for (i = 0; i < SVGicon_menu.length; ++i) {
 SVGicon_menu[i].innerHTML = '<?xml version="1.0" encoding="utf-8"?>  <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"    width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">  <g>   <rect width="22.928" height="3.964"/>   <rect y="9.009" width="22.928" height="3.964"/>   <rect y="18.018" width="22.928" height="3.964"/>  </g>  </svg>  ';
+}
+
+
+// SVG icon_minus
+var SVGicon_minus = document.querySelectorAll('.svg-icon_minus');
+
+for (i = 0; i < SVGicon_minus.length; ++i) {
+SVGicon_minus[i].innerHTML = '<?xml version="1.0" encoding="utf-8"?>  <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"    width="9.917px" height="1.917px" viewBox="0 0 9.917 1.917" enable-background="new 0 0 9.917 1.917" xml:space="preserve">  <rect width="9.917" height="1.917"/>  </svg>  ';
+}
+
+
+// SVG icon_plus
+var SVGicon_plus = document.querySelectorAll('.svg-icon_plus');
+
+for (i = 0; i < SVGicon_plus.length; ++i) {
+SVGicon_plus[i].innerHTML = '<?xml version="1.0" encoding="utf-8"?>  <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"    width="9.917px" height="9.917px" viewBox="0 0 9.917 9.917" enable-background="new 0 0 9.917 9.917" xml:space="preserve">  <polygon points="9.917,4 5.917,4 5.917,0 4,0 4,4 0,4 0,5.917 4,5.917 4,9.917 5.917,9.917 5.917,5.917 9.917,5.917 "/>  </svg>  ';
 }
 
 

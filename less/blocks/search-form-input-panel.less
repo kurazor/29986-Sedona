@@ -9,33 +9,29 @@
 }
 
 .search-form-input-panel__counter {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   height: 38px;
   width: 38px;
   
   flex-shrink: 0;
-    
-  &:hover {
-    background-color: @color-fill-input-hover;
-  }
   
-  &:active,
-  &:focus {
-    background-color: @color-fill-input-focused; 
+  fill: @text-color-normal-down;
+
+  &:hover {
+    fill: @text-color-normal;
   }
+
+  &:active {
+    fill: @text-color-normal-hover;
+  } 
 }
 
-.search-form-input-panel__counter--decrease {  
-  background: url('../img/icon-minus.svg') 50% 50% no-repeat;
-  background-size: 11px 11px;
-  opacity: 0.2;
-}
-
-.search-form-input-panel__counter--increase {
-  background: url('../img/icon-plus.svg') 50% 50% no-repeat;
-  background-size: 11px 11px;
-  opacity: 0.2;
+.search-form-input-panel__counter svg {
+  width: 11px;
+  height: 11px;
 }
  
 .search-form-input-panel__input-wrapper {

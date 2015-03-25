@@ -117,31 +117,37 @@
                 <form class="search-form">
                     <div class="search-form-row">
                         <label class="search-form-label" for="search-form-arrival">Дата заезда:</label>
-                        <input type="date" class="search-form-input  search-form-input--date" id="search-form-arrival" value="2014-04-24" />
+                        <div class="search-form-input-wrapper">
+                            <input type="date" class="search-form-input" id="search-form-arrival" value="2014-04-24" />
+                            <div class="search-form-tool  search-form-tool--date  svg-icon_calendar"></div>
+                        </div>
                     </div>
                     <div class="search-form-row">
                         <label class="search-form-label" for="search-form-departure">Дата выезда:</label>
-                        <input type="date" class="search-form-input  search-form-input--date" id="search-form-departure" value="2014-07-24" />
+                        <div class="search-form-input-wrapper">
+                            <input type="date" class="search-form-input" id="search-form-departure" value="2014-07-24" />
+                            <div class="search-form-tool  search-form-tool--date  svg-icon_calendar"></div>
+                        </div>
                     </div>
                     <div class="search-form-row">
                         <div class="search-form-column">
                             <label class="search-form-label" for="search-form-adult">Взрослых:</label>
                             <div class="search-form-input-panel">
-                              <div class="search-form-input-panel__counter  search-form-input-panel__counter--decrease"></div>
+                              <div class="search-form-input-panel__counter  search-form-input-panel__counter--decrease  svg-icon_minus"></div>
                               <div class="search-form-input-panel__input-wrapper">
                                 <input type="text" class="search-form-input  search-form-input--number" id="search-form-adult" value="2" />
                               </div>
-                              <div class="search-form-input-panel__counter  search-form-input-panel__counter--increase"></div>
+                              <div class="search-form-input-panel__counter  search-form-input-panel__counter--increase  svg-icon_plus"></div>
                             </div>
                         </div>
                         <div class="search-form-column">
                             <label class="search-form-label" for="search-form-children">Детей:</label>
                             <div class="search-form-input-panel">
-                              <div class="search-form-input-panel__counter  search-form-input-panel__counter--decrease"></div>
+                              <div class="search-form-input-panel__counter  search-form-input-panel__counter--decrease  svg-icon_minus"></div>
                               <div class="search-form-input-panel__input-wrapper">
                                 <input type="text" class="search-form-input  search-form-input--number" id="search-form-children" value="0" />
                               </div>
-                              <div class="search-form-input-panel__counter  search-form-input-panel__counter--increase"></div>
+                              <div class="search-form-input-panel__counter  search-form-input-panel__counter--increase  svg-icon_plus"></div>
                             </div>
                         </div>
                     </div>
