@@ -38,8 +38,7 @@
   
   &,
   &:hover,
-  &:active,
-  &:focus {
+  &:active {
     color: @text-color-inverted;
     text-decoration: none;
   }
@@ -104,11 +103,14 @@
     font-weight: 700;
     line-height: 26px;
 
-    &,
-    &:hover,
-    &:active,
-    &:focus {
-      color: @text-color-normal;
+    color: @text-color-normal;
+    
+    &:hover {
+      color: @text-color-normal-hover;
+    }
+    
+    &:active {
+      color: @text-color-normal-down;
     }
   }
   

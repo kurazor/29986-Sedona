@@ -119,7 +119,7 @@ module.exports = function(grunt) {
   ]);
     
   grunt.registerTask('images', [
-    'grunticon:images',
+    /*'grunticon:images',*/
     'svginject:all'
   ]);
 };
