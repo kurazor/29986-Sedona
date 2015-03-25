@@ -39,8 +39,20 @@
   &,
   &:hover,
   &:active {
-    color: @text-color-inverted;
     text-decoration: none;
+  }
+  
+  background-color: @color-fill-featured;
+  color: @text-color-inverted;
+
+  &:hover {
+    background-color: @color-fill-featured-hover;
+    color: @text-color-inverted-hover;
+  }
+
+  &:active {
+    background-color: @color-fill-featured-down;
+    color: @text-color-inverted-down;
   }
 }
 
@@ -103,13 +115,16 @@
     font-weight: 700;
     line-height: 26px;
 
+    background-color: @color-fill-background;
     color: @text-color-normal;
     
     &:hover {
+      background-color: @color-fill-background;
       color: @text-color-normal-hover;
     }
     
     &:active {
+      background-color: @color-fill-background;
       color: @text-color-normal-down;
     }
   }

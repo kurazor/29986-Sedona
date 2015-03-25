@@ -130,13 +130,24 @@ svg.page-header__intro-text--grand-canyon,
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 40px;
+	background-color: #81b3d2;
+	color: #ffffff;
 }
 
 .page-menu__list a,
 .page-menu__list a:hover,
 .page-menu__list a:active {
-	color: #ffffff;
 	text-decoration: none;
+}
+
+.page-menu__list a:hover {
+	background-color: #669ec0;
+	color: #ffffff;
+}
+
+.page-menu__list a:active {
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .page-menu__collapse-button {
@@ -956,14 +967,17 @@ svg.page-header__intro-text--grand-canyon,
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 26px;
+	background-color: #ffffff;
 	color: #000000;
 }
 
 .page-menu__list a:hover {
+	background-color: #ffffff;
 	color: #81b3d2;
 }
 
 .page-menu__list a:active {
+	background-color: #ffffff;
 	color: rgba(0, 0, 0, 0.3);
 }
 
