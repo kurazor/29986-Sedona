@@ -99,6 +99,11 @@ svg.page-header__intro-text--grand-canyon,
 	position: relative;
 }
 
+.page-menu--collapsed {
+	height: 0;
+	overflow: hidden;
+}
+
 .page-menu__list {
 	display: block;
 	list-style: none;
@@ -935,6 +940,10 @@ svg.page-header__intro-text--grand-canyon,
 	left: 0;
 	width: 100%;
 	z-index: 3;
+}
+
+.page-menu--collapsed {
+	height: auto;
 }
 
 .page-menu__list {
