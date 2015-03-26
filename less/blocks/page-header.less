@@ -61,7 +61,7 @@ svg.page-header__intro-text--grand-canyon, .page-header__intro-text--grand-canyo
   }
   
   .page-header__intro {
-    background-size: 120% auto;
+    background-size: cover;
     height: 512px; 
     .triangle-bottom-sized (450px, 100px, 10deg,  @color-fill-background);
   }
@@ -98,3 +98,8 @@ svg.page-header__intro-text--grand-canyon, .page-header__intro-text--grand-canyo
   }
 }
 
+@media (min-width: @screen-lg-min) {  
+  .page-header__intro {
+    .triangle-bottom-sized (700px, 100px, 8deg,  @color-fill-background);
+  }
+}

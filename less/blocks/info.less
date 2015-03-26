@@ -23,10 +23,19 @@
   justify-content: center;
   height: 256px;
   overflow: hidden;
+  position: relative;
 }
 
 .info__image {
-  max-width: 100%; 
+  min-height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+  
+.info--reversed__image {
+  right: auto;
+  left: 0;
 }
 
 @media (min-width: @screen-sm-min) { 
@@ -35,12 +44,13 @@
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
+    flex-direction: row;
   }
   
   .info--reversed {
     flex-direction: row-reverse; 
   }
-  
+
   .info--featured {
     width: 100%;
   }
