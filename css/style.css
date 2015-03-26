@@ -1109,6 +1109,9 @@ svg.page-header__intro-text--grand-canyon,
 	-webkit-flex-direction: row;
 	-ms-flex-direction: row;
 	flex-direction: row;
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
 }
 
 .info-list-item {
@@ -1136,7 +1139,7 @@ svg.page-header__intro-text--grand-canyon,
 .info-list-item__textwrapper {
 	text-align: center;
 	padding-top: 20px;
-	padding-bottom: 22px;
+	padding-bottom: 40px;
 }
 
 .info-list-item__image,
