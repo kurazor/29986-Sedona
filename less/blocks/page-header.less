@@ -3,7 +3,14 @@
 }
 
 .page-header__intro {
-  background: url('../img/photo-background@1x.jpg') 50% 0 no-repeat;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-image: url('../img/photo-background@1x.jpg');
+  
+  @media (min-resolution: 2dppx) { 
+    background-image: url('../img/photo-background@2x.jpg');
+  }
+  
   background-size: auto 512px;
   height: 390px;
 

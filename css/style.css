@@ -23,7 +23,9 @@ body {
 }
 
 .page-header__intro {
-	background: url('../img/photo-background@1x.jpg') 50% 0 no-repeat;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	background-image: url('../img/photo-background@1x.jpg');
 	background-size: auto 512px;
 	height: 390px;
 	text-align: center;
@@ -831,6 +833,14 @@ svg.social__button:active,
 
 .page-authors__academy-logo svg:active {
 	fill: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-resolution: 2dppx) {
+
+.page-header__intro {
+	background-image: url('../img/photo-background@2x.jpg');
+}
+
 }
 
 @media (min-width: 720px) {
