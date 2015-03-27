@@ -97,11 +97,16 @@ svg.page-header__intro-text--grand-canyon,
 
 .page-menu {
 	position: relative;
+	max-height: 250px;
+	overflow: hidden;
 }
 
 .page-menu--collapsed {
-	height: 0;
-	overflow: hidden;
+	max-height: 0;
+}
+
+.page-menu--animated {
+	transition: max-height 0.5s ease;
 }
 
 .page-menu__list {
@@ -940,6 +945,7 @@ svg.page-header__intro-text--grand-canyon,
 	left: 0;
 	width: 100%;
 	z-index: 3;
+	max-height: none;
 }
 
 .page-menu--collapsed {

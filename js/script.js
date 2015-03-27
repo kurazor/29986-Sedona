@@ -8,6 +8,7 @@
     var expandButton = document.querySelector('.page-menu-panel__expand-button');
     
     menu.classList.add('page-menu--collapsed');
+    menu.classList.add('page-menu--animated');
     
     expandButton.addEventListener('tap', function() {
       menu.classList.remove('page-menu--collapsed');
