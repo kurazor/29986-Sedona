@@ -2,6 +2,7 @@ module.exports = function(grunt) {
   var getSvgFileNames = function() {
     return [
       'form_logo_triangle.svg',
+      'icon_burger.svg',
       'icon_calendar.svg',
       'icon_cross.svg',
       'icon_facebook.svg',
