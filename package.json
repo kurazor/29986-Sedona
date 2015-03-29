@@ -25,6 +25,7 @@
     "grunt-lintspaces": "^0.6.0",
     "grunt-svginject": "0.0.2",
     "grunt-svgmin": "^2.0.1",
-    "load-grunt-tasks": "^3.0.0"
+    "load-grunt-tasks": "^3.0.0",
+    "mustache": "^2.0.0"
   }
 }
