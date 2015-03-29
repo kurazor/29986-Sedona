@@ -105,8 +105,14 @@
             <div class="col s-4">
             </div>
           </div>
-
-          <!-- место подстановки template-adult и template-child -->
+          
+          <div class="row  row-adults">
+            <!-- место подстановки template-adult -->
+          </div>
+          
+          <div class="row  row-children">
+            <!-- место подстановки template-child -->
+          </div>
 
         </div>
 
@@ -217,39 +223,36 @@
   </div>
   
   <script type="text/html" id="template-adult">
-    <div class="row">
-      <div class="col s-4">
-        <label for="text8">Фамилия взрослого №1: <span>*</span></label>
-        <input type="text" id="text8">
-      </div>
-      <div class="col s-4">
-        <label for="text9">Имя взрослого №1: <span>*</span></label>
-        <input type="text" id="text9">
-      </div>
-      <div class="col s-4">
-        <label for="text10">Отчество взрослого №1</label>
-        <input type="text" id="text10">
-      </div>
+    <div class="col s-4">
+      <label for="adult-{{id1}}">Фамилия взрослого №{{counter}}: <span>*</span></label>
+      <input type="text" id="adult-{{id1}}">
+    </div>
+    <div class="col s-4">
+      <label for="adult-{{id2}}">Имя взрослого №{{counter}}: <span>*</span></label>
+      <input type="text" id="adult-{{id2}}">
+    </div>
+    <div class="col s-4">
+      <label for="adult-{{id3}}">Отчество взрослого №{{counter}}</label>
+      <input type="text" id="adult-{{id3}}">
     </div>
   </script>
   
   <script type="text/html" id="template-child">
-    <div class="row">
-      <div class="col s-4">
-        <label for="text14">Фамилия ребенка №1: <span>*</span></label>
-        <input type="text" id="text14">
-      </div>
-      <div class="col s-4">
-        <label for="text15">Имя ребенка №1: <span>*</span></label>
-        <input type="text" id="text15">
-      </div>
-      <div class="col s-4">
-        <label for="text16">Отчество ребенка №1</label>
-        <input type="text" id="text16">
-      </div>
+    <div class="col s-4">
+      <label for="child-{{id1}}">Фамилия ребенка №{{counter}}: <span>*</span></label>
+      <input type="text" id="child-{{id1}}">
+    </div>
+    <div class="col s-4">
+      <label for="child-{{id2}}">Имя ребенка №{{counter}}: <span>*</span></label>
+      <input type="text" id="child-{{id2}}">
+    </div>
+    <div class="col s-4">
+      <label for="child-{{id3}}">Отчество ребенка №{{counter}}</label>
+      <input type="text" id="child-{{id3}}">
     </div>
   </script>
 
+  <script src="js/vendors/mustache.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
