@@ -146,6 +146,18 @@ module.exports = function(grunt) {
         dist: {
             files: getSvgMinFiles('_sources/svg', '_sources/svg/min')
         }
+    },
+    
+    cssmin: {
+      style: {
+        options: {
+          keepSpecialComments: 0,
+          report: "gzip"
+        },
+        files: {
+          'css/style.min.css': [ 'css/style.css' ]
+        }
+      }
     }
 
   });
@@ -153,11 +165,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-lintspaces');
   grunt.loadNpmTasks('grunt-grunticon');
   grunt.loadNpmTasks('grunt-svginject');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   grunt.registerTask('default', [
     'less',
     'autoprefixer',
     'cmq',
+    'cssmin',
     'watch'
   ]);
 
@@ -165,6 +179,7 @@ module.exports = function(grunt) {
     'less',
     'autoprefixer',
     'cmq',
+    'cssmin'
   ]);
     
   grunt.registerTask('images', [
